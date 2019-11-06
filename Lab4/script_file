@@ -1,0 +1,13 @@
+#PBS -N lab4_simd_100
+#PBS -l walltime=1:59:00
+#PBS -l mem=1GB
+#PBS -l nodes=1:gpus=1
+#PBS -A PAS1421
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+
+time ./lab4_simd < PC_data_t00100 > 100_simd_output
+
+
+#end of script

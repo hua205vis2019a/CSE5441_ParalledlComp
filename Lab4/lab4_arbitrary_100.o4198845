@@ -1,0 +1,19 @@
+
+real	12m50.065s
+user	9m8.879s
+sys	3m41.072s
+
+-----------------------
+Resources requested:
+mem=1gb
+nodes=1:gpus=1
+-----------------------
+Resources used:
+cput=00:12:50
+walltime=00:12:51
+mem=0.007GB
+vmem=17.817GB
+-----------------------
+Resource units charged (estimate):
+0.021 RUs
+-----------------------
