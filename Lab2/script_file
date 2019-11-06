@@ -1,0 +1,12 @@
+#PBS -N lab2
+#PBS -l walltime=2:00:00
+#PBS -l mem=1GB
+#PBS -l nodes=1:ppn=28:gpus=1
+#PBS -A PAS1421
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+
+time ./lab2.out < PC_data_t10000 > 10000output
+
+#end of script

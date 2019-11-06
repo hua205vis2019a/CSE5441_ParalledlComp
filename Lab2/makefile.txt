@@ -1,0 +1,7 @@
+CC=icc
+CFALGS = -Wall
+
+OBJ = transform.o
+
+lab2: $(OBJ)
+	$(CC) transform.o lab2.c -o lab2.out -lpthread
