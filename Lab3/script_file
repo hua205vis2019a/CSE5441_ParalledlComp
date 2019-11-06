@@ -1,0 +1,15 @@
+#PBS -N lab3
+#PBS -l walltime=2:00:00
+#PBS -l mem=1GB
+#PBS -l nodes=2:ppn=28:gpus=1
+#PBS -A PAS1421
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+
+time ./lab3_omp.out  32 < PC_data_t00100 > 100_32_output
+time ./lab3_omp.out  32 < PC_data_t01000 > 1000_32_output
+time ./lab3_omp.out  32 < PC_data_t05000 > 5000_32_output
+time ./lab3_omp.out  32 < PC_data_t10000 > 10000_32_output
+
+#end of script
